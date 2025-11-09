@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Emergency Alert - Disaster Detection System</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: linear-gradient(to right, #0a3d62, #1e90ff);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .feature-img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .feature-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .team-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+    .team-img:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      background-color: #0a3d62;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Smart Emergency Alert</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#install">Installation</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container" data-aos="fade-up">
+      <h1 class="display-4 fw-bold">Smart Emergency Alert</h1>
+      <p class="lead">An intelligent disaster detection system for earthquakes, floods, and fires — with alarm alerts and automatic electricity shutoff.</p>
+      <a href="#features" class="btn btn-light btn-lg mt-3" data-aos="zoom-in" data-aos-delay="200">Explore Features</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-down">
+        <h2 class="fw-bold">Key Features</h2>
+        <p class="text-muted">Reliable, fast, and intelligent protection for your home or workplace.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+          <img src="Earth.jpg" alt="Earthquake Detection">
+          <h5 class="mt-3 fw-semibold">Earthquake Detection</h5>
+          <p>Detects seismic vibrations instantly and sends alerts before major shocks occur.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+          <img src="flood.jpg" class="feature-img" alt="Flood Detection">
+          <h5 class="mt-3 fw-semibold">Flood Detection</h5>
+          <p>Monitors water levels in real-time to provide early flood warnings and prevent damage.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+          <img src="fire.jpg" class="feature-img" alt="Fire Detection">
+          <h5 class="mt-3 fw-semibold">Fire Detection & Auto Power Cut</h5>
+          <p>Detects smoke and heat, sounds alarms, and automatically turns off electricity to prevent further damage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+<section id="team" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Meet Our Team</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <img src="macky.jpg" class="team-img" alt="Team Member">
+        <h6 class="fw-bold">Christian Mark Dequillo</h6>
+        <p class="text-muted">Hacker</p>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <img src="martin.jpg" class="team-img" alt="Team Member">
+        <h6 class="fw-bold">Creed Martin</h6>
+        <p class="text-muted">Hastler</p>
+      </div>
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <img src="bryan.jpg" class="team-img" alt="Team Member">
+        <h6 class="fw-bold">Mel Bryan Baco</h6>
+        <p class="text-muted">Hipster</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQs -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">Frequently Asked Questions</h2>
+      </div>
+      <div class="accordion" id="faqAccordion" data-aos="fade-right">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              How does Smart Emergency Alert detect disasters?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The system uses advanced sensors and AI algorithms to detect early signs of earthquakes, floods, and fires in real-time.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Does it work without internet?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, the system functions locally and only requires internet for cloud alerts or mobile notifications.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Can it be integrated with existing home systems?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely. Smart Emergency Alert is compatible with most smart home systems and electrical setups.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation -->
+  <section id="install" class="bg-light py-5">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="fw-bold mb-4">How to Install</h2>
+      <ol class="text-start mx-auto" style="max-width: 700px;">
+        <li>Mount the Smart Emergency Alert device near your electrical mainboard.</li>
+        <li>Connect the sensor modules for earthquake, flood, and fire detection as per the included diagram.</li>
+        <li>Download the mobile app and register your device.</li>
+        <li>Test the system to ensure the alarm and auto power-off functions work properly.</li>
+      </ol>
+      <a href="#" class="btn btn-primary mt-3" data-aos="zoom-in">Download Installation Guide (PDF)</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-aos="fade-up">
+    <p>© 2025 Smart Emergency Alert. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 120,
+    });
+  </script>
+</body>
+</html>
